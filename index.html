@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" style="height: 60px;">
+      </a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn " style="background-color: transparent;" type="submit">Search</button>
+        <button class="btn btn-success" type="button" id="showCart">🛍️ Cart</button>
+      </form>
+    </div>
+  </nav>
+
+  <h1>Total Items: 23</h1>
+
+  <div class="container">
+    <div class="row">
+      <img src="./images/Product1.jpeg" alt="Product Image" width="200" height="200">
+      <h2>Product 1</h2>
+      <p>Price: $10.00</p>
+      <button type="button" class="btn btn-primary mb-2 add">Add to Cart</button>
+    </div>
+    <div class="row">
+      <img src="./images/Product2.jpeg" alt="Product Image" width="200" height="200">
+      <h2>Product 2</h2>
+      <p>Price: $50.00</p>
+      <button type="button" class="btn btn-primary mb-2 add" >Add to Cart</button>
+    </div>
+    <div class="row">
+      <img src="./images/Product3.png" alt="Product Image" width="200" height="200">
+      <h2>Product 3</h2>
+      <p>Price: $150.00</p>
+      <button type="button" class="btn btn-primary mb-2 add" >Add to Cart</button>
+    </div>
+  </div>
+  <div class="container" id="card-wrappers" style="margin-top: 20px;">
+
+    </div>
+  <div class="cart" id="Cartpanel">
+  <h2>Cart</h2>
+  <div class="listCart">
+    <div class="item">
+      
+    </div>
+    
+  </div>
+  <div class="actions">
+    <input id="promo-code" type="text" placeholder="Promo Code">
+    <button type="button" class="btn btn-primary mt-2" id="promo">Submit</button>
+    <button type="button" class="btn btn-danger mt-2" id="delete">Delete All</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+          integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+          crossorigin="anonymous"></script>
+</body>
+</html>
